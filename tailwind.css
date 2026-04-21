@@ -1,0 +1,129 @@
+/* ============================================================
+   PitchScout — Pre-built Tailwind CSS
+   Contains only the classes used in index.html.
+   Replace <script src="https://cdn.tailwindcss.com"> with
+   <link rel="stylesheet" href="tailwind.css" />
+   ============================================================ */
+
+/* ── Reset / base ───────────────────────────────────────── */
+*, ::before, ::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+img, video { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+
+/* ── Layout ─────────────────────────────────────────────── */
+.flex         { display: flex; }
+.hidden       { display: none; }
+.flex-col     { flex-direction: column; }
+.flex-1       { flex: 1 1 0%; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-2  { gap: 0.5rem; }
+.gap-4  { gap: 1rem; }
+.gap-6  { gap: 1.5rem; }
+.w-full { width: 100%; }
+.min-h-screen { min-height: 100vh; }
+.max-w-sm  { max-width: 24rem; }
+.max-w-lg  { max-width: 32rem; }
+.max-w-xl  { max-width: 36rem; }
+.max-w-3xl { max-width: 48rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.text-center { text-align: center; }
+.whitespace-nowrap { white-space: nowrap; }
+.object-contain { object-fit: contain; }
+.transform { transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1); }
+
+/* ── Spacing ─────────────────────────────────────────────── */
+.p-6  { padding: 1.5rem; }
+.p-10 { padding: 2.5rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-10 { padding-left: 2.5rem; padding-right: 2.5rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.mb-2  { margin-bottom: 0.5rem; }
+.mb-3  { margin-bottom: 0.75rem; }
+.mb-6  { margin-bottom: 1.5rem; }
+.mb-8  { margin-bottom: 2rem; }
+.mb-10 { margin-bottom: 2.5rem; }
+.mt-2  { margin-top: 0.5rem; }
+.mt-16 { margin-top: 4rem; }
+.pt-8  { padding-top: 2rem; }
+
+/* ── Border ──────────────────────────────────────────────── */
+.border   { border-width: 1px; border-style: solid; }
+.border-t { border-top-width: 1px; border-top-style: solid; }
+.border-zinc-700 { border-color: #3f3f46; }
+.border-zinc-800 { border-color: #27272a; }
+.border-zinc-900\/50 { border-color: rgba(24,24,27,0.5); }
+.rounded-xl  { border-radius: 0.75rem; }
+.rounded-2xl { border-radius: 1rem; }
+
+/* ── Typography ──────────────────────────────────────────── */
+.text-xs  { font-size: 0.75rem;  line-height: 1rem; }
+.text-sm  { font-size: 0.875rem; line-height: 1.25rem; }
+.text-lg  { font-size: 1.125rem; line-height: 1.75rem; }
+.text-xl  { font-size: 1.25rem;  line-height: 1.75rem; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem;  line-height: 2.5rem; }
+.font-medium  { font-weight: 500; }
+.font-bold    { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black   { font-weight: 900; }
+.uppercase    { text-transform: uppercase; }
+.leading-relaxed { line-height: 1.625; }
+.tracking-tight   { letter-spacing: -0.025em; }
+.tracking-wide    { letter-spacing: 0.025em; }
+.tracking-widest  { letter-spacing: 0.1em; }
+.tracking-\[0\.4em\] { letter-spacing: 0.4em; }
+.underline          { text-decoration-line: underline; }
+.underline-offset-4 { text-underline-offset: 4px; }
+.underline-offset-8 { text-underline-offset: 8px; }
+.decoration-2       { text-decoration-thickness: 2px; }
+
+/* ── Colours — text ──────────────────────────────────────── */
+.text-white      { color: #ffffff; }
+.text-gray-400   { color: #9ca3af; }
+.text-zinc-400   { color: #a1a1aa; }
+.text-zinc-500   { color: #71717a; }
+.text-zinc-600   { color: #52525b; }
+.text-pitch-green { color: #42f469; }
+
+/* ── Colours — background ────────────────────────────────── */
+.bg-zinc-800  { background-color: #27272a; }
+.bg-zinc-900  { background-color: #18181b; }
+.bg-pitch-green { background-color: #42f469; }
+
+/* ── Colours — placeholder ───────────────────────────────── */
+.placeholder-zinc-500::placeholder { color: #71717a; }
+
+/* ── Shadow ──────────────────────────────────────────────── */
+.shadow-\[0_20px_60px_-15px_rgba\(0\,0\,0\,0\.7\)\] {
+  box-shadow: 0 20px 60px -15px rgba(0,0,0,0.7);
+}
+
+/* ── Transitions ─────────────────────────────────────────── */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+  transition-duration: 150ms;
+}
+
+/* ── Height ──────────────────────────────────────────────── */
+.h-48 { height: 12rem; }
+
+/* ── Focus ───────────────────────────────────────────────── */
+.focus\:outline-none:focus { outline: none; }
+.focus\:border-\[\#42f469\]:focus { border-color: #42f469; }
+
+/* ── Hover ───────────────────────────────────────────────── */
+.hover\:text-\[\#2ccf4f\]:hover  { color: #2ccf4f; }
+.hover\:bg-\[\#2ccf4f\]:hover    { background-color: #2ccf4f; }
+.hover\:text-pitch-green:hover   { color: #42f469; }
+.hover\:scale-105:hover          { transform: scale(1.05); }
+
+/* ── Responsive — md (≥768px) ────────────────────────────── */
+@media (min-width: 768px) {
+  .md\:h-64      { height: 16rem; }
+  .md\:text-2xl  { font-size: 1.5rem; line-height: 2rem; }
+  .md\:flex-row  { flex-direction: row; }
+}
